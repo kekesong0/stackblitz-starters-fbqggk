@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#instruction {
+  font-size: 22px;
+  color: #555;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 300px;
+  margin: 20px;
+  gap: 5px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #cc97dc;
+  border: 2px solid #264653;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+
+.cell:hover {
+  background-color: #2a9d8f;
+  transform: scale(1.1);
+}
+
+.message {
+  font-size: 18px;
+  margin: 20px;
+  color: #6d6875;
+}
+
+.restart-btn, #hint-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #264653;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.restart-btn:hover, #hint-btn:hover {
+  background-color: #2a9d8f;
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none;
+}
+
+.cell.treasure {
+  background-image: url('https://img.freepik.com/free-vector/shine-old-wooden-chest-realistic-composition-transparent-background-with-vintage-coffer-sparkling-particles_1284-33071.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
